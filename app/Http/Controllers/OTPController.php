@@ -179,6 +179,9 @@ public function generateInsertCommands1(Request $request)
         ->keyBy(function ($record) {
             return $record->name . '-' . $record->category_id;  
         });
+
+
+        
     $insertCommands = [];
     $not = [];
 
